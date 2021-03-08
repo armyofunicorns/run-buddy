@@ -1,0 +1,56 @@
+/* CSS file created by Anthony Hall */
+
+/* Reset browser variations */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    color: #39A6B2;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    padding: 20px 35px;
+    background-color: #39A6B2;
+}
+
+/* Define the h1 element inside the header */
+header h1 {
+    display: inline;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #FCE138;
+    margin: 0;
+}
+
+/* Define the a element */
+header a {
+    color: #FCE138;
+    text-decoration: none;
+}
+
+/* Define hover pseudo class on a element */
+header a:hover {
+    opacity: .5;
+}
+
+/* Define the header area */
+header nav {
+    float: right;
+    margin: 7px 0;
+}
+
+/* Override the ul li elements */
+header nav ul li {
+    display: inline;
+}
+
+/* Define the a element in the nav */
+header nav ul li a {
+    margin: 0 30px;
+    font-weight: 200;
+    font-size: 1rem;
+}
