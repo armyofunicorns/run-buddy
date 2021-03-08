@@ -1,9 +1,11 @@
 /* CSS file created by Anthony Hall */
 
 /* Reset browser variations */
+/* Add a universal selector */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* Global styles */
@@ -12,6 +14,7 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+/* Define all header styles */
 header {
     padding: 20px 35px;
     background-color: #39A6B2;
@@ -34,6 +37,7 @@ header a {
 
 /* Define hover pseudo class on a element */
 header a:hover {
+    text-decoration: underline;
     opacity: .5;
 }
 
@@ -53,4 +57,33 @@ header nav ul li a {
     margin: 0 30px;
     font-weight: 200;
     font-size: 1rem;
+}
+
+/* Define all footer styles */
+footer {
+    width: 100%;
+    background-color: #FCE138;
+    padding: 40px 35px;
+}
+
+/* Define the h2 element in the footer */
+footer h2 {
+    display: inline;
+    font-size: 1rem;
+    color: #024E76;
+    margin: 0;
+}
+
+/* Define the div element in the footer */
+/* Add a negative margin to help vertical alignment  */
+footer div {
+    float: right;
+    line-height: 1.5;
+    text-align: right;
+    margin-top: -8px;
+}
+
+/* Define the a element in the footer */
+footer a {
+    color: #024E76;
 }
