@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <title>Run Buddy</title>
+        <link rel="stylesheet" href="./assets/css/style.css" />        
     </head>
     <body>
         <!-- This is the navigation area -->
@@ -24,7 +25,7 @@
                     </li>
                     <li>
                         <!-- This is an anchor link -->
-                        <a href="#your-trainers">Your Trainers</a>
+                        <a href="#meet-the-trainers">Your Trainers</a>
                     </li>
                     <li>
                         <!-- This is an anchor link -->
@@ -35,33 +36,134 @@
         </header>
 
         <!-- This is the main hero area -->
-        <section>
-
+        <section class="hero">
+            <div class="hero-form">
+                <h3>
+                    Get Started Today
+                </h3>
+                <p>Complete the form below and one of our trainers will schedule a consult appointment.</p>
+                <!-- Add the form -->
+                <form action="#">
+                    <!-- Field 1 -->
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="Your Name" name="name" id="name" class="form-input" />
+                    <!-- Field 2 -->
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Your Email Address" name="email" id="email" class="form-input" />
+                    <!-- Field 3 -->
+                    <label for="phone">Phone</label>
+                    <input type="tel" placeholder="Your Phone Number" name="phone" id="phone" class="form-input" />
+                    <!-- Radio buttons -->
+                    <p class="radio-p">
+                        Have you worked with a trainer before?
+                        <input type="radio" name="trainer-confirm" id="trainer-yes" />
+                        <label for="trainer-yes">Yes</label>
+                        <input type="radio" name="trainer-confirm" id="trainer-no" />
+                        <label for="trainer-no">No</label>
+                    </p>
+                    <!-- Checkbox -->
+                    <!-- Added value attribute -->
+                    <p>
+                        <label for="age-confirm-yes">I acknowledge that I am at least 18 years of age.</label>
+                        <input type="checkbox" name="age-confim" id="age-confirm-yes" value="Yes" checked />
+                    </p>
+                    <!-- Submit button -->
+                    <button type="button">Get running!</button>
+                </form>
+            </div>
         </section>
 
         <!-- This the What we do area -->
-        <section>
-            <h2>What We Do</h2>
+        <section id="what-we-do" class="intro">
+            <h2 class="section-title primary-border">What We Do</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, voluptas officiis! Aliquam sed minima dolor alias itaque eligendi suscipit modi, fuga voluptas animi reiciendis ratione quae quaerat quod possimus ad?
+            Quod at sit veritatis id ullam culpa, facilis quidem quisquam recusandae corporis corrupti mollitia enim consectetur minima perspiciatis. Placeat repudiandae voluptatem earum suscipit vitae dolore sequi facilis repellat fugit nam!
+            Quasi, voluptate quidem ut laudantium fugiat cumque porro recusandae neque voluptatum ex eveniet aperiam harum dolorum accusantium. Reprehenderit, explicabo illo, consectetur delectus, provident atque earum soluta est voluptatum culpa ad?</p>
         </section>
 
         <!-- This the What you do area -->
-        <section>
-            <h2>What You Do</h2>
+        <section id="what-we-do" class="steps">
+            <h2 class="section-title secondary-border">What You Do</h2>
+            <div>
+                <!-- Add icon -->
+                <img src="./assets/images/step-1.svg" alt="Fill Out the Form Above" />
+                <h3>Step 1: <span>Fill Out the Form Above.</span></h3>
+                <p>You're already here, so why not?</p>
+            </div>
+            
+            <div>
+                <!-- Add icon -->
+                <img src="./assets/images/step-2.svg" alt="Consult with One of Our Trainers" />
+                <h3>Step 2: <span>Consult with One of Our Trainers.</span></h3>
+                <p>Are you here to build muscle, lose weight, or just feel good?</p>
+            </div>
+            
+            <div>
+                <!-- Add icon -->
+                <img src="./assets/images/step-3.svg" alt="Get Runnings" />
+                <h3>Step 3: <span>Get Running.</span></h3>
+                <p>Hit the ground running (literally) once your trainer lays out your plan.</p>
+            </div>
+            
+            <div>
+                <!-- Add icon -->
+                <img src="./assets/images/step-4.svg" alt="See Results" />
+                <h3>Step 4: <span>See Results.</span></h3>
+                <p>Bi-weekly checkins with your trainer will keep you focused.</p>
+            </div>
         </section>
 
         <!-- This is the Meet trainers area -->
-        <section>
-            <h2>Meet the Trainers</h2>
+        <section id="meet-the-trainers" class="trainers">
+            <h2 class="section-title primary-border">Meet the Trainers</h2>
+            <!-- This is the first trainer -->
+            <article class="trainer">
+                <img src="./assets/images/trainer-1.jpg" alt="Meet Arron. Arron Stephens in his workout clothes, ready to pump iron.">
+                <div class="trainer-bio text-left">
+                    <h3>Arron Stephens</h3>
+                    <h4>Speed / Strength</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque maiores odio aperiam atque molestiae molestias adipisci asperiores consequuntur natus iure facere ratione obcaecati autem animi aliquam quos optio, saepe aliquid. Similique, nam! Ad minus optio aut nesciunt doloremque atque unde consequatur numquam odio eveniet rerum quisquam nemo sequi ex nihil iste voluptas, et quas quae ratione distinctio quibusdam explicabo inventore!
+                    </p>
+                </div>
+            </article>
+            <!-- This is the second trainer -->
+            <article class="trainer">
+                <div class="trainer-bio text-right">
+                <h3>Joanna Gill</h3>
+                <h4>Endurance</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque maiores odio aperiam atque molestiae molestias adipisci asperiores consequuntur natus iure facere ratione obcaecati autem animi aliquam quos optio, saepe aliquid. Similique, nam! Ad minus optio aut nesciunt doloremque atque unde consequatur numquam odio eveniet rerum quisquam nemo sequi ex nihil iste voluptas, et quas quae ratione distinctio quibusdam explicabo inventore!
+                </p>
+                </div>
+                <img src="./assets/images/trainer-2.jpg" alt="Joanna Gill cooling off after a workout" />
+            </article>
+            
+            <!-- This is the third trainer -->
+            <article class="trainer">
+                <img src="./assets/images/trainer-3.jpg" alt="Harry Smith wearing a headband and lifting comically small pink weights" />
+                <div class="trainer-bio text-left">
+                <h3>Harry "the Headband" Smith</h3>
+                <h4>Strength</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque maiores odio aperiam atque molestiae molestias adipisci asperiores consequuntur natus iure facere ratione obcaecati autem animi aliquam quos optio, saepe aliquid. Similique, nam! Ad minus optio aut nesciunt doloremque atque unde consequatur numquam odio eveniet rerum quisquam nemo sequi ex nihil iste voluptas, et quas quae ratione distinctio quibusdam explicabo inventore!
+                </p>
+                </div>
+            </article>
         </section>
 
         <!-- This is the Reach out area -->
-        <section>
+        <section id="reach-out">
             <h2>Reach Out</h2>
         </section>
 
         <!-- This is the footer area -->
         <footer>
-            <p>❤️ Made with love by Run Buddy.</p>
+            <h2>❤️ Made with love by Run Buddy.</h2>
+            <div>
+                <a href="#">Privacy Policy</a><br/>
+                &copy; 2021 Run Buddy, Inc.
+            </div>
         </footer>
     </body>
 </html>

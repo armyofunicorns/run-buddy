@@ -14,6 +14,19 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+/* Utility classes */
+.text-left {
+    text-align: left;
+}
+  
+.text-right {
+    text-align: right;
+}
+
+section {
+    padding: 60px;
+}
+
 /* Define all header styles */
 header {
     padding: 20px 35px;
@@ -86,4 +99,163 @@ footer div {
 /* Define the a element in the footer */
 footer a {
     color: #024E76;
+}
+
+/* Define custom hero styling */
+.hero {
+    background-image: url("../images/hero-bg.jpg");
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-form {
+    border: 3px #024E76 solid;
+    background-color: #FCE138;
+    color: #024E76;
+    padding: 20px;
+    width: 500px;
+    position: absolute;
+    bottom: 120px;
+    right: 140px;
+}
+
+.hero-form h3 {
+    margin: 0;   
+    font-size: 1.25rem;
+}
+
+.hero-form p {
+    margin: 5px 0 15px 0;
+    line-height: 1.25;
+}
+
+/* Define the form input style */
+.form-input {
+    border: 1px #024E76 solid;
+    display: block;
+    padding: 7px 15px;
+    font-size: .85rem;
+    color: #024E76;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.hero-form label {
+    margin: 0 5px;
+}
+
+/* Fix the p element not adjusted by the margin above */
+.hero-form p:nth-last-child(3) {
+    padding-left: 5px;
+}
+
+/* Define the button style */
+.hero-form button {
+    border: 0;
+    background-color: #024E76;
+    color: #FCE138;
+    font-size: .85rem;
+    padding: 10px 20px;
+}
+
+/* Define styles for What We Do */
+.intro {
+    text-align: center;
+}
+
+.intro p {
+    margin: 0 auto;
+    line-height: 1.7;
+    color: #39A6B2;
+    width: 80%;
+    font-size: 1rem; 
+}
+
+/* Define the styles for the What You Do section */
+.steps {
+    text-align: center;
+    background-color: #FCE138;
+}
+
+.steps div {
+    margin-bottom: 80px;
+}
+
+.steps img {
+    width: 15%;
+    margin: 10px 0;
+}
+
+.steps h3 {
+    color: #024E76;
+    font-size: 1.50rem;
+} 
+
+.steps span {
+    font-size: 1.30rem;
+}
+
+.steps p {
+    color: #39A6B2;
+    font-size: 1rem; 
+}
+
+/* Define the section title */
+.section-title {
+    display: inline-block;
+    font-size: 2.5rem;
+    color: #024E76;
+    margin-bottom: 35px;
+    padding: 0 100px 20px 100px;
+}
+
+/* Define the border bottom (hrs) */
+.primary-border {
+    border-bottom: 3px #FCE138 solid;
+}
+
+.secondary-border {
+    border-bottom: 3px #39A6B2 solid;
+}
+
+/* Define the trainer styles */
+.trainers {
+    text-align: center;
+}
+
+.trainer {
+    width: 900px;
+    color: #FCE138;
+    background-color: #024E76;
+    margin: 0 auto 30px auto;
+    overflow: auto;
+}
+
+.trainer img {
+    width: 35%;
+    float: left;
+}
+
+.trainer-bio {
+    padding: 35px;
+    float: left;
+    width: 65%;
+}
+
+.trainer-bio h3 {
+    font-size: 1.5rem;
+    margin: 8px 0;
+}
+
+.trainer-bio h4 {
+    font-weight: 200;
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+}
+
+.trainer-bio p {
+    font-size: 1rem;
+    line-height: 1.3;
 }
