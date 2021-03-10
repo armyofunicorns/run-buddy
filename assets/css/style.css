@@ -23,6 +23,18 @@ body {
     text-align: right;
 }
 
+.color-blue {
+    color: #024E76;
+}
+
+.color-yellow {
+    color: #FCE138;
+}
+
+a {
+    color: #FCE138;
+}
+
 section {
     padding: 60px;
 }
@@ -206,7 +218,7 @@ footer a {
 .section-title {
     display: inline-block;
     font-size: 2.5rem;
-    color: #024E76;
+    
     margin-bottom: 35px;
     padding: 0 100px 20px 100px;
 }
@@ -258,4 +270,36 @@ footer a {
 .trainer-bio p {
     font-size: 1rem;
     line-height: 1.3;
+}
+
+/* Define the styles for the Reach Out area */
+.contact {
+    text-align: center;
+    background-color: #024E76;
+} 
+
+.contact-info iframe {
+    border: 0;
+    width: 400px;
+    height: 400px;
+}
+
+.contact-info div {
+    display: inline-block;
+    color: #fff;
+    text-align: left;
+    vertical-align: top;
+    width: 410px;
+    margin: 30px 0 0 60px;
+}
+
+.contact-info h3 {
+    font-size: 1.5rem;
+}
+
+.contact-info p, .contact-info address {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 1rem;
+    font-style: normal;
 }
