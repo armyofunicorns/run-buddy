@@ -1,0 +1,52 @@
+/* Define the styles for the Privacy hero area */
+.hero {
+    background-position: bottom;
+    height: auto;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero h2 {
+    font-weight: normal;
+    font-size: 42px;
+    font-style: italic;
+}
+
+.hero .page-title {
+    display: inline-block;
+    border-bottom: 4px solid #FCE138;
+    padding: 0 80px 15px 80px;
+}
+
+/* Define the styles for the Privacy secondary styles */
+.secondary-content {
+    width: 80%;
+    margin: 0 auto;
+    color: #024E76;
+}
+
+.secondary-content h3 {
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+.secondary-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+/* Define the styles for the unordered lists */
+ul {
+    color: #39A6B2;
+}
+
+li {
+    color: #39A6B2;
+    margin: 10px 0;
+}
+
+a:hover {
+    opacity: .5;
+    text-decoration: none;
+}
