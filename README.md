@@ -13,4 +13,4 @@ https://armyofunicorns.github.io/run-buddy/
 ## Contribution
 Made with ❤️ by Anthony Hall
 
-### ©️ 2019 Run Buddy, Inc 
+### ©️ 2021 Run Buddy, Inc.
