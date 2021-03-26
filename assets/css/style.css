@@ -41,13 +41,15 @@ section {
 
 /* Define all header styles */
 header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     padding: 20px 35px;
     background-color: #39A6B2;
 }
 
 /* Define the h1 element inside the header */
 header h1 {
-    display: inline;
     font-weight: 700;
     font-size: 2rem;
     color: #FCE138;
@@ -68,7 +70,6 @@ header a:hover {
 
 /* Define the header area */
 header nav {
-    float: right;
     margin: 7px 0;
 }
 
