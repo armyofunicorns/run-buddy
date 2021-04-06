@@ -24,7 +24,7 @@ body {
 }
 
 .flex-row {
-    display: flex;
+    display: flex;;
 }
 
 .color-blue {
@@ -255,7 +255,7 @@ footer a {
 .step-text h4 {
     font-size: 1.25rem;
     line-height: 1.5;
-    color: #024e76;
+    color: #024E76;
 }
 
 /* Define the section title */
@@ -288,7 +288,6 @@ footer a {
 .trainer {
     color: #FCE138;
     background-color: #024E76;
-    /* margin: 0 auto 20px auto; */
     margin: 20px;
     flex: 1;
 }
@@ -322,19 +321,24 @@ footer a {
     background-color: #024E76;
 } 
 
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-info > * {
+    flex: 1;
+    margin: 15px;
+}
+
 .contact-info iframe {
     border: 0;
-    width: 400px;
     height: 400px;
 }
 
 .contact-info div {
-    display: inline-block;
     color: #fff;
-    text-align: left;
-    vertical-align: top;
-    width: 410px;
-    margin: 30px 0 0 60px;
 }
 
 .contact-info h3 {
@@ -344,6 +348,28 @@ footer a {
 .contact-info p, .contact-info address {
     margin: 20px 0;
     line-height: 1.5;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-style: normal;
+}
+
+.contact-form input, .contact-form textarea {
+    display: block;
+    border: 1px solid #024E76;
+    padding: 7px 15px;
+    font-size: 1.25rem;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #024E76;
+    margin: 5 0 15 0;
+    width: 100%;
+}
+
+.contact-form button {
+    width: 100%;
+    border: none;
+    background: #FCE138;
+    color: #024E76;
+    text-align: center;
+    padding: 15px 0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.25rem;
 }
