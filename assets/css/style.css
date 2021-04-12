@@ -50,6 +50,13 @@ header {
     flex-wrap: wrap;
     padding: 20px 35px;
     background-color: #39A6B2;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url("../images/hero-bg-flipped.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 100%;
 }
 
 /* Define the h1 element inside the header */
@@ -58,6 +65,8 @@ header h1 {
     font-size: 2rem;
     color: #FCE138;
     margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
 }
 
 /* Define the a element */
@@ -91,7 +100,15 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: 200;
     font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
+header nav ul li a:hover {
+    background: #fce138;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
+}  
 
 /* Define all footer styles */
 footer {
@@ -125,20 +142,25 @@ footer a {
 .hero {
     background-image: url("../images/hero-bg-flipped.jpg");
     background-size: cover;
-    background-position: center;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 100%;
 }
 
 .hero-form {
     border: 3px #024E76 solid;
-    background-color: #FCE138;
+    background-color: rgba(252,225,56,0.8);
     color: #024E76;
     padding: 20px;
     width: 40%;
     margin: 3.5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: 15px; /* old versions of chrome and safari */
+    -moz-border-radius: 15px; /* old versions of firefox */
+    border-radius: 15px; /* standardized browsers */
 }
 
 .hero-form h3 {
@@ -160,6 +182,14 @@ footer a {
     color: #024E76;
     width: 100%;
     margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255, 0.75);
+}
+
+/* create a new rule for focus state */
+.form-input:focus {
+    background-color: rgba(255,255,255, 1);
+    outline: none;
 }
 
 .hero-form label {
@@ -178,6 +208,11 @@ footer a {
     color: #FCE138;
     font-size: .85rem;
     padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.hero-form button:hover {
+    background-color: #39a6b2;  
 }
 
 .hero-text {
@@ -192,7 +227,8 @@ footer a {
 .hero-text h2 {
     font-style: italic;
     font-size: 3vh;
-    color: #FCE138
+    color: #FCE138;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Define styles for What We Do */
@@ -216,9 +252,12 @@ footer a {
     margin: 50px auto;
     padding-bottom: 50px;
     width: 80%;
-    border-bottom: 1px solid #39a6b2;
     align-items: center;
     justify-content: space-between;
+}
+
+.step:not(:last-child) {
+    border-bottom: 1px solid #39A6B2;
 }
 
 .step h3 {
@@ -362,6 +401,8 @@ footer a {
     color: #024E76;
     margin: 5 0 15 0;
     width: 100%;
+    border-radius: 10px;
+    background-color: rgba(255,255,255, 0.75);
 }
 
 .contact-form button {
@@ -373,6 +414,17 @@ footer a {
     padding: 15px 0;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 1.25rem;
+    border-radius: 10px;
+}
+
+.contact-form input:focus, textarea:focus {
+    background-color: rgba(255,255,255, 1);
+    outline: none;
+}
+
+.contact-form button:hover {
+    color: #fce138;
+    background: #39a6b2;
 }
 
 /* Media Queries */
@@ -381,11 +433,13 @@ footer a {
     header {
         padding-bottom: 0;
         justify-content: center;
+        position: relative;
     }
 
     header h1 {
         width: 100%;
         text-align: center;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
 
     header nav ul {
@@ -396,6 +450,14 @@ footer a {
 
     header nav ul li a {
         font-size: 20px;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    header nav ul li a:hover {
+        background: #fce138;
+        color: #024e76;
+        border-radius: 15px;
+        text-shadow: none;
     }
 
     footer h2, footer div {
@@ -453,8 +515,10 @@ footer a {
   
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
   @media screen and (max-width: 575px) {
+    
     .hero-form button {
         width: 100%;
+        border-radius: 10px;
     }
 
     .section-title {
